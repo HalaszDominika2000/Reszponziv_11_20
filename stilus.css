@@ -1,0 +1,46 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #918888;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+  }
+  
+ 
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(117, 113, 113);
+  }
+  
+  .active {
+    background-color: red;
+  }
+.Galéria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+img {
+    width: 100%;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .Galéria {
+        grid-template-columns: 1fr;  
+    }
+    ul {
+        grid-template-columns: 1fr;    
+    }
+    
+}
